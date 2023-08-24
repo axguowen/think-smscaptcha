@@ -16,7 +16,7 @@
     "require": {
         "php": ">=7.2.5",
         "topthink/framework": "^6.1",
-        "axguowen/think-smsclient": "dev-master@dev"
+        "axguowen/think-smsclient": "dev-master"
     },
     "autoload": {
         "psr-4": {
