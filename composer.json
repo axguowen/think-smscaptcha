@@ -1,0 +1,34 @@
+{
+    "name": "axguowen/think-smscaptcha",
+    "description": "Simple SMS Captcha For ThinkPHP",
+    "keywords": [
+        "thinkphp",
+        "sms",
+        "captcha"
+    ],
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "axguowen",
+            "email": "axguowen@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2.5",
+        "topthink/framework": "^6.1",
+        "axguowen/think-smsclient": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "think\\": "src"
+        }
+    },
+    "extra": {
+        "think": {
+            "config": {
+                "smscaptcha": "src/config.php"
+            }
+        }
+    },
+    "minimum-stability": "dev"
+}
