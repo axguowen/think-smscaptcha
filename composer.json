@@ -29,6 +29,5 @@
                 "smscaptcha": "src/config.php"
             }
         }
-    },
-    "minimum-stability": "dev"
+    }
 }
