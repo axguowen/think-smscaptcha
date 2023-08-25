@@ -75,6 +75,12 @@ class SmsClient extends Platform
             // 返回结果
             return $response;
         }
+        // 获取短信发送结果
+        $sendResult = $response[0][0];
+        // 如果发送失败
+        if($sendResult['send_status'] != 1){
+            return [null, new \Exception('短信发送失败, 请检查手机号是否正确')];
+        }
         // 构造返回数据
         $resultData = [
             'driver' => $response[0][0]['driver'],
