@@ -83,7 +83,7 @@ class SmsClient extends Platform
         }
         // 构造返回数据
         $resultData = [
-            'driver' => $response[0][0]['driver'],
+            'driver' => $sendResult['driver'],
             'mobile' => $mobile,
             'code' => $code,
         ];
