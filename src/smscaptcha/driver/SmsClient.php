@@ -42,9 +42,10 @@ class SmsClient extends Platform
      * @access public
      * @param string $mobile
      * @param string $code
+     * @param string $token
      * @return array
      */
-    public function send(string $mobile, string $code = null)
+    public function send(string $mobile, string $code = null, string $token = '')
 	{
         // 如果手机号为空
         if(empty($mobile)){
@@ -68,7 +69,7 @@ class SmsClient extends Platform
         $captchaData = empty($this->options['var_name']) ? [$code] : [$this->options['var_name'] => $code];
 
         // 发送短信
-        $response = Client::platform($this->options['platform'])->send($mobile, $captchaData);
+        $response = Client::platform($this->options['platform'])->send($mobile, $captchaData, $token);
 
         // 发送失败
         if(is_null($response[0])){
