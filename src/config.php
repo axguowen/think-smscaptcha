@@ -126,6 +126,29 @@ return [
             'cache_tag' => '',
             // 重复发送时间间隔
             'resend_limit' => 60,
+        ],
+        // 天翼云
+        'ctyun' => [
+            // 驱动类型
+            'type' => 'Ctyun',
+            // 公钥
+            'access_key' => '',
+            // 私钥
+            'security_key' => '',
+            // 模板ID
+            'template_code' => '',
+            // 签名
+            'sign_name' => '',
+            // 验证码位数
+            'length' => 6,
+            // 验证码有效期
+            'expire' => 900,
+            // 模板变量名
+            'var_name' => 'code',
+            // 缓存标识
+            'cache_tag' => '',
+            // 重复发送时间间隔
+            'resend_limit' => 60,
         ]
     ],
 ];
