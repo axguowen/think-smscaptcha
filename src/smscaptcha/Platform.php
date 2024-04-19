@@ -83,7 +83,7 @@ abstract class Platform implements PlatformInterface
         $captchaData = Cache::get('smscaptcha_data_' . $this->options['cache_tag'] . '_' . $mobile);
         // 如果不存在
         if(is_null($captchaData)){
-            return [null, new \Exception('验证码数据不存在或已过期')];
+            return [null, new \Exception('验证码错误或已过期')];
         }
         // 如果验证码错误
         if($captchaData['code'] == $code){
