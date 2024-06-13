@@ -26,7 +26,7 @@
     "extra": {
         "think": {
             "config": {
-                "smscaptcha": "src/config.php"
+                "smscaptcha": "src/smscaptcha/config.php"
             }
         }
     }
